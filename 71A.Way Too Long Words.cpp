@@ -1,4 +1,4 @@
-//WAY TO LONG WORDS
+
 #include<bits/stdc++.h>
 #include<string>
 using namespace std;
