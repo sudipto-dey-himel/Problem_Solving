@@ -1,4 +1,4 @@
-//WORD CAPITALIZATION
+
 #include<iostream>
 #include<string>
 using namespace std;
