@@ -1,4 +1,3 @@
-//ANTON ANS POLYHEDRONS
 
 /**
  *  @author Sudipto Dey Himel
