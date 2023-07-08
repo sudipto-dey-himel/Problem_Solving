@@ -1,4 +1,4 @@
-//TEAM
+
 #include<iostream>
 using namespace std;
 
