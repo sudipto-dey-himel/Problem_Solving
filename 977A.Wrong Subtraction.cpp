@@ -1,4 +1,4 @@
-//WRONG SUBTRACTION
+
 #include<bits/stdc++.h>
 using namespace std;
 int main() {
