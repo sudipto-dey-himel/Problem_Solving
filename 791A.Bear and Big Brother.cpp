@@ -1,4 +1,4 @@
-//BEAR & BIG BROTHER
+
 #include<bits/stdc++.h>
 using namespace std;
 int main() {
