@@ -1,4 +1,4 @@
-//VASYA THE HIPSTER
+
 #include<bits/stdc++.h>
 using namespace std;
 #define ll long long
