@@ -1,4 +1,3 @@
-//BEAUTIFUL YEAR
 #include<bits/stdc++.h>
 using namespace std;
 int main() {
