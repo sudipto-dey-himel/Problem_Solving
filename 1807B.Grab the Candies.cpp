@@ -1,4 +1,4 @@
-//GRAB THE CANDIES
+
 #include<bits/stdc++.h>
 using namespace std;
 #define ll long long
