@@ -1,4 +1,4 @@
-//CANDIES & TWO SISTERS
+
 #include<bits/stdc++.h>
 using namespace std;
 void solve() {
