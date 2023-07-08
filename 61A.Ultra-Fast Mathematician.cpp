@@ -1,4 +1,4 @@
-//ULTRA-FAST MATHEMATICIAN
+
 #include<iostream>
 #include<string>
 using namespace std;
