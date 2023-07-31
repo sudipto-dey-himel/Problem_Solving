@@ -1,14 +1,22 @@
-
 #include<bits/stdc++.h>
-using namespace std;
 #define ll long long
+#define endl '\n'
+#define opt() ios_base::sync_with_stdio(false);cin.tie(NULL);cout.tie(NULL)
+
+using namespace std;
+
 int main() {
-    ll n, k;
+    opt();
+
+    ll n, k, sum=0, count=0;
     cin>>n>>k;
-    ll t=k, i;
-    for(i=1; i<=n; i++) {
-        t+=5*i;
-        if(t>240) break;
+    for(ll i=1; i<=n; i++) {
+        sum+=i*5;
+
+        if((sum+k)<=240)
+        count++;
     }
-    cout<<i-1<<endl;
+    cout<<count<<endl;
+
+    return 0;
 }
