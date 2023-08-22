@@ -6,7 +6,7 @@ int main() {
     ll n, count=0;
     cin>>n;
     ll arr[n];
-    for(ll i=-0; i<n; i++) 
+    for(ll i=0; i<n; i++) 
     cin>>arr[i];
 
     ll max=arr[0];
