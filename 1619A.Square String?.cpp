@@ -1,12 +1,9 @@
-
 #include <bits/stdc++.h>
 #include <string>
 using namespace std;
 #define ll long long
 
-/**
- * @author Sudipto Dey Himel
- */
+// *** approach -> 1
 
 void solve()
 {
@@ -31,8 +28,8 @@ void solve()
         }
         for (ll i = 0; i < s1.size(); i++)
         {
-            if (s1[i] == s2[i])
-                count++;
+            if (s1[i] == s2[i])             
+                count++;                    
         }
         if (count == s.size() / 2)
             cout << "YES" << endl;
@@ -42,6 +39,14 @@ void solve()
     else
         cout << "NO" << endl;
 }
+
+// *** approach -> 2
+
+// void solve() {
+//     string s;
+//     cin>>s;
+//     (s.substr(0, s.size()/2) == s.substr(s.size()/2, s.size())) ? cout<<"YES\n" : cout<<"NO\n";
+// }
 
 int main()
 {
