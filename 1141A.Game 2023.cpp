@@ -1,77 +1,63 @@
 #include <bits/stdc++.h>
-#define ll long long
-#define ld long double
+
+typedef long long ll;
+typedef double ld;
+
 #define endl '\n'
-#define allV(V) (V).begin(), (V).end()
-#define allA(arr, size) arr, arr + size
-#define sortV(V) sort(allV(V))
-#define revV(V) reverse(allV(V))
-#define sortA(arr, size) sort(allA(arr, size))
-#define revA(arr, size) reverse(allA(arr, size))
-#define sumV(a) accumulate(a.begin(), a.end(), 0)
 #define fi first
-#define se second
-#define pb(V) push_back(V)
-#define maxV(V) *max_element(V.begin(), V.end())
+#define se second 
+#define pb push_back
+#define ppb pop_back
+#define HA cout<<"YES"<<endl
+#define NA cout<<"NO"<<endl
+#define tc() ll t;cin>>t;while(t--)
+#define all(V) (V).begin(), (V).end()
+#define bug(a) cout << #a << " : " << a << endl;
+#define sumV(a) accumulate(a.begin(), a.end(), 0LL)
+#define mxV(V) *max_element(V.begin(), V.end())
 #define mnV(V) *min_element(V.begin(), V.end())
 #define mx(a, b, c) max(a, max(b, c))
 #define mn(a, b, c) min(a, min(b, c))
-#define tc()  \
-    ll t;     \
-    cin >> t; \
-    while (t--)
-#define opt()                         \
-    ios_base::sync_with_stdio(false); \
-    cin.tie(NULL);                    \
-    cout.tie(NULL)
+#define ceiling(a, b) ((a / b) + (a % b != 0))
+#define gcd(a, b) __gcd(a, b)
+#define lcm(a, b) ((a * b) / gcd(a, b))
+#define opt() ios_base::sync_with_stdio(false);cin.tie(NULL);cout.tie(NULL)
 
-const int MAX_N = 1e5 + 5;
+const int MAX_SIZE = 1e5 + 5;
 const ll MOD = 1e9 + 7;
-const ll INF = 1e9;
-const ld EPS = 1e-9;
+const ll INF = LLONG_MAX;
+const ld EPS = LLONG_MIN;
 
 using namespace std;
 
-void solve()
-{
-    ll n, m;
-    cin >> n >> m;
-    ll ans = 0;
-    if (n > m || m % n != 0)
-        cout << -1 << endl;
-    else
-    {
-        ll d = m / n;
-        while (1)
-        {
-
-            if (d % 2 == 0)
-            {
-                d /= 2;
-                ans++;
-            }
-            else if (d % 3 == 0)
-            {
-                d /= 3;
-                ans++;
-            }
-            else if (d == 1)
-            {
-                cout << ans << endl;
-                break;
-            }
-            else
-            {
-                cout << -1 << endl;
-                break;
-            }
-        }
+void solve() {
+    ll n, m; cin>>n>>m;
+    if(n == m) {
+        cout<<0<<endl;  return;
     }
+    if(n > m || m%n) {
+        cout<<-1<<endl; return;
+    }
+    ll temp = m/n;
+    ll count = 0;
+    while(1) {
+        if(temp % 2 == 0) {
+            temp /= 2; count++;
+        }
+        else if(temp%3 == 0) {
+            temp /= 3; count++;
+        }
+        else break;
+        
+        if(temp <= 1) break;
+    }
+    (temp == 1) ? cout<<count<<endl : cout<<-1<<endl;
 }
 
-int main()
-{
+int main() {
     opt();
-    solve();
+    //tc() {
+        solve();
+    //}
     return 0;
 }
